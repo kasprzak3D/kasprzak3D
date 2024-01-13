@@ -9,6 +9,10 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+#phone {
+    visibility: hidden;
+}
+
 #navbar {
     margin: 0;
     padding: 5px 0;
@@ -53,14 +57,41 @@ BANNER
     background-size: cover;
 }*/
 
-#banner-section {
+#banner-300x100 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    display: none;
 }
 
+#banner-400x100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#banner-500x100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#banner-750x125 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
 #welcome-section {
     margin: 50px;
     display: flex;
@@ -190,7 +221,7 @@ div.my-information {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 649px){
     #navbar ul {
         width: 100%;
     }
@@ -231,4 +262,28 @@ div.my-information {
         font-size: 1.1rem;
     }
 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    #banner-300x100 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    #banner-400x100 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 749px) {
+    #banner-500x100 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    #banner-750x125 {
+        display: flex;
+    }
 }
