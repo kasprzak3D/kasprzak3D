@@ -9,10 +9,6 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-#phone {
-    visibility: hidden;
-}
-
 #navbar {
     margin: 0;
     padding: 5px 0;
@@ -268,11 +264,17 @@ div.my-information {
     #banner-300x100 {
         display: flex;
     }
+    #navbar ul { 
+        padding-inline-start: 0px;
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 499px) {
     #banner-400x100 {
         display: flex;
+    }
+    #navbar ul {
+        padding-inline-start: 0px;
     }
 }
 
@@ -280,10 +282,16 @@ div.my-information {
     #banner-500x100 {
         display: flex;
     }
+    #navbar ul {
+        padding-inline-start: 0px;
+    }
 }
 
 @media only screen and (min-width: 750px){
     #banner-750x125 {
         display: flex;
+    }
+    #navbar ul {
+        padding-inline-start: 0px;
     }
 }
